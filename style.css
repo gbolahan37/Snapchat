@@ -10,7 +10,12 @@ body{
     padding: 70px;
     display: flex;
     justify-content: center;
-    height: 600px;
+    height: 900px;
+    align-items: center;
+
+    @media (max-width: 484px) {
+        padding: 20px;
+    }
 }
 .form-content{
     background-color: #FFFFFF;
@@ -49,6 +54,9 @@ body{
     border-radius: 4px;
     border: 1px solid black;
 }
+.form-input:focus{
+    outline: none;
+}
 .submit-btn{
     background-color: #0096E5;
     color: #F7F7F7;
@@ -58,6 +66,11 @@ body{
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+.submit-btn a{
+    color: #F7F7F7;
+    font-size: 18px;
+    text-decoration: none;
 }
 .btn{
     display: flex;
@@ -100,4 +113,14 @@ body{
     font-family: "Poppins", sans-serif;
     color: gray;
     font-size: 14px;
+}
+.form-inputt{
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(232, 232, 232);
+}
+.form-inputt:focus{
+    outline: none;
 }
